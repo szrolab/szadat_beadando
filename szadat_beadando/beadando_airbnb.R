@@ -133,7 +133,7 @@ ggplot(data=sisland_data)+geom_point(aes(
 map <- ggplot(sisland_data, mapping = aes(longitude, latitude, color = price))
 map + geom_point(cex = 0.2) + labs(title = "Az ár eloszlása Staten Islanden")
 
-map <- ggplot(manhattan_data, mapping = aes(longitude, latitude, color = room_type))
+map <- ggplot(sisland_data, mapping = aes(longitude, latitude, color = room_type))
 map + geom_point(cex = 0.1) + labs(title = "A szobatípusok eloszlása Staten Islanden")
 
 ggplot(data = sisland_data,
